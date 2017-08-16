@@ -1,0 +1,28 @@
+<div class="main" style="margin: 50px">
+  <div class="sidebar">
+
+    <div class="slack-name">
+      <h2>Firebase</h2>
+    </div>
+
+    <div class="channel-list">
+      <div class="list-head">Channels</div>
+    </div>
+
+    <div class="my-info">
+      <img class="user-pic" ng-src="{{ getGravatar(profile.$id) }}" />
+      <div class="user-info">
+        <div class="user-name">
+          {{ profile.displayName }}
+        </div>
+
+        <div class="options">
+          <a ui-sref="users">Edit profile</a>
+          /
+          <a href="#" ng-click="logout()">logout</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
